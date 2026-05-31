@@ -1,0 +1,154 @@
+/* ==========================================================================
+   DESIGN TIME - HOJA DE ESTILOS PROFESIONAL (CSS)
+   Fusión Definitiva: Fondo Tecnológico + Tarjetas Glassmorphism + Títulos Flotantes
+   ========================================================================== */
+
+:root {
+    --color-principal: #1A1A1A;       
+    --color-secundario: #FFFFFF;      
+    --color-acento: #FF4C4C;          
+    --color-gris-lineas: #8b95a1;     
+    --color-resaltado: #007BFF;       
+    
+    --transicion-suave: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --transicion-rapida: all 0.2s ease;
+}
+
+/* ==========================================================================
+   1. FONDO TECNOLÓGICO Y ATMÓSFERA (Intacto)
+   ========================================================================== */
+body {
+    background: linear-gradient(135deg, #ffffff 0%, #d9e2ec 40%, #aab7c4 80%, #eef2f5 100%);
+    background-size: 300% 300%;
+    animation: respiracionFondoTecnologico 15s ease-in-out infinite;
+    color: var(--color-principal);
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+@keyframes respiracionFondoTecnologico { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+body::before, body::after {
+    content: ''; position: fixed; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.6);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.1));
+    box-shadow: inset -10px -10px 20px rgba(0, 123, 255, 0.1), 0 10px 20px rgba(0,0,0,0.05);
+    pointer-events: none; z-index: -1;
+}
+body::before { width: 180px; height: 180px; top: 15%; left: 5%; animation: flotarBurbujaCristal 18s infinite ease-in-out; }
+body::after { width: 250px; height: 250px; bottom: 10%; right: 2%; animation: flotarBurbujaCristal 22s infinite ease-in-out reverse; }
+@keyframes flotarBurbujaCristal { 0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0.6; } 50% { transform: translate(40px, -60px) scale(1.1) rotate(180deg); opacity: 0.9; } 100% { transform: translate(0, 0) scale(1) rotate(360deg); opacity: 0.6; } }
+
+.bg-aurora-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2; overflow: hidden; pointer-events: none; }
+.bg-sphere { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; mix-blend-mode: multiply; }
+.bg-sphere-1 { width: 900px; height: 900px; background: radial-gradient(circle, rgba(0, 123, 255, 0.18) 0%, transparent 70%); top: -20%; left: -10%; animation: flotarAurora 20s infinite ease-in-out; }
+.bg-sphere-2 { width: 800px; height: 800px; background: radial-gradient(circle, rgba(26, 26, 26, 0.12) 0%, transparent 70%); bottom: -15%; right: -10%; animation: flotarAuroraInversa 25s infinite ease-in-out; }
+.bg-sphere-3 { width: 700px; height: 700px; background: radial-gradient(circle, rgba(0, 200, 255, 0.15) 0%, transparent 70%); top: 40%; left: 30%; animation: flotarAurora 18s infinite ease-in-out reverse; }
+@keyframes flotarAurora { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(80px, 50px) scale(1.15); } 100% { transform: translate(0, 0) scale(1); } }
+@keyframes flotarAuroraInversa { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-60px, -70px) scale(1.2); } 100% { transform: translate(0, 0) scale(1); } }
+
+/* ==========================================================================
+   2. NAVBAR Y TÍTULOS (ACTUALIZADO: Glass, Flotante y Bicolor)
+   ========================================================================== */
+header { background: linear-gradient(135deg, #FF4C4C 0%, #ff7b7b 50%, #FF4C4C 100%) !important; background-size: 300% 300% !important; animation: movimientoAuroraNavbar 8s ease infinite !important; box-shadow: 0 8px 30px rgba(255, 76, 76, 0.4); border-bottom: 2px solid rgba(255, 255, 255, 0.4); }
+@keyframes movimientoAuroraNavbar { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+.navbar-brand { font-family: 'Bebas Neue', sans-serif !important; font-size: 2rem !important; letter-spacing: 2px; color: var(--color-secundario) !important; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
+
+/* --- ACTUALIZADO: Título Principal (Mucho más grande y vistoso) --- */
+.titulo-glass-flotante {
+    font-family: 'Bebas Neue', 'Arial Black', sans-serif !important;
+    /* Tamaño dinámico: gigante en PC (7rem), adaptable en móviles */
+    font-size: clamp(4rem, 10vw, 7.5rem) !important; 
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Más espacio para mayor impacto */
+    margin-bottom: 20px;
+    display: inline-block;
+    /* Degradado Bicolor: Azul Eléctrico y Rojo Coral */
+    background: linear-gradient(135deg, var(--color-resaltado) 20%, var(--color-acento) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Efecto Glass Brillante Intensificado */
+    filter: drop-shadow(0px 10px 15px rgba(0, 123, 255, 0.4)) drop-shadow(0px 0px 35px rgba(255, 255, 255, 0.95));
+    animation: flotarTituloGlass 6s ease-in-out infinite;
+    position: relative;
+    line-height: 1.1; /* Asegura que el resplandor no corte el texto */
+}
+
+@keyframes flotarTituloGlass {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Burbujas en los títulos conservadas */
+.titulo-glass-flotante::before, .titulo-glass-flotante::after { content: ''; position: absolute; border-radius: 50%; pointer-events: none; transition: var(--transicion-suave); }
+.titulo-glass-flotante::before { width: 16px; height: 16px; background: rgba(0, 123, 255, 0.6); bottom: 5px; left: -25px; animation: latidoBurbuja 3s ease-in-out infinite; }
+.titulo-glass-flotante::after { width: 22px; height: 22px; background: rgba(255, 76, 76, 0.5); top: 5px; right: -30px; animation: latidoBurbuja 4s ease-in-out infinite reverse; }
+
+/* --- Subtítulo en Rojo Coral --- */
+.lead, p.subtitulo-destacado {
+    background: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    padding: 12px 25px; 
+    border-radius: 20px; 
+    color: var(--color-acento) !important; 
+    font-weight: 800; 
+    font-size: 1.2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
+    display: inline-block;
+}
+
+/* ==========================================================================
+   3. TARJETAS Y ARTÍCULOS (Glassmorphism + Brillo Mejorado)
+   ========================================================================== */
+.card, .modal-content {
+    background: rgba(0, 95, 200, 0.75) !important; backdrop-filter: blur(16px) saturate(120%) !important; -webkit-backdrop-filter: blur(16px) saturate(120%) !important; border: 1px solid rgba(255, 255, 255, 0.4) !important; border-radius: 18px !important; box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2) !important; transition: var(--transicion-suave) !important; position: relative; overflow: hidden;
+}
+
+#carruselInformacion .bg-light {
+    background: rgba(0, 105, 215, 0.8) !important;
+    backdrop-filter: blur(16px) saturate(120%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 15px 40px rgba(0, 123, 255, 0.4), inset 0 0 20px rgba(255,255,255,0.2) !important;
+    transition: var(--transicion-suave) !important;
+}
+
+#carruselInformacion .bg-light:hover {
+    background: rgba(0, 115, 235, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 25px 60px rgba(0, 123, 255, 0.6), inset 0 0 40px rgba(255,255,255,0.4) !important;
+    transform: translateY(-8px) scale(1.02) !important;
+}
+
+.card::after, #carruselInformacion .bg-light::after { content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent); transform: skewX(-25deg); pointer-events: none; transition: 0.8s; }
+.tarjeta-hover:hover, .card:hover { transform: translateY(-8px) scale(1.02) !important; box-shadow: 0 25px 50px rgba(0, 123, 255, 0.5) !important; border: 1px solid rgba(255, 255, 255, 0.9) !important; background: rgba(0, 110, 255, 0.85) !important; }
+.tarjeta-hover:hover::after, .card:hover::after, #carruselInformacion .bg-light:hover::after { left: 150%; }
+
+.card-body, .card-title, .card-text, .text-muted, .text-secondary, #carruselInformacion .bg-light *, .modal-content * { color: #FFFFFF !important; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+/* ==========================================================================
+   4. BOTONES Y EXPLOSIONES (Intacto)
+   ========================================================================== */
+.card-body a.btn, .btn-hover-interactivo, .btn-suscribir { background-color: var(--color-acento) !important; color: var(--color-secundario) !important; border: none !important; padding: 8px 18px !important; border-radius: 30px !important; font-weight: 700; box-shadow: 0 4px 12px rgba(255, 76, 76, 0.4); transition: var(--transicion-suave); position: relative; overflow: hidden; display: inline-block; }
+.card-body a.btn:hover, .btn-hover-interactivo:hover, .btn-suscribir:hover { background-color: var(--color-secundario) !important; color: var(--color-acento) !important; transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6); }
+
+#carruselInformacion .btn, .btn-leer-mas { background: transparent !important; color: var(--color-secundario) !important; border: 2px solid var(--color-secundario) !important; border-radius: 30px !important; padding: 8px 20px !important; }
+#carruselInformacion .btn:hover, .btn-leer-mas:hover { background: var(--color-secundario) !important; color: var(--color-resaltado) !important; box-shadow: 0 0 15px rgba(255,255,255,0.6) !important; }
+
+.btn-perfil { background-color: var(--color-principal) !important; color: var(--color-secundario) !important; border: 2px solid rgba(255,255,255,0.2) !important; padding: 10px 22px !important; border-radius: 30px !important; font-weight: 700; }
+.btn-perfil:hover { background-color: #333333 !important; border-color: var(--color-secundario) !important; }
+
+.btn:active::after, a.btn:active::after { content: ''; position: absolute; width: 30px; height: 30px; background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 60%); border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: estallidoBotonMaximo 0.5s ease-out forwards; pointer-events: none; z-index: 0; }
+@keyframes estallidoBotonMaximo { 0% { transform: translate(-50%, -50%) scale(1); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(10); opacity: 0; } }
+
+/* ==========================================================================
+   5. EXTRAS Y SECCIONES (Intacto)
+   ========================================================================== */
+.card .badge { background-color: var(--color-acento) !important; color: var(--color-secundario) !important; }
+.seccion-opiniones { background: rgba(255, 255, 255, 0.5) !important; backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }

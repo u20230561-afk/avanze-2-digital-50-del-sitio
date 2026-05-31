@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Digital de Diseño | Portada Principal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        .tarjeta-hover {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .tarjeta-hover:hover {
+            transform: scale(1.04);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+            z-index: 10;
+        }
+        
+        .carrusel-hover {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .carrusel-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+            z-index: 5;
+        }
+
+        .btn-hover-interactivo {
+            transition: transform 0.3s ease;
+        }
+        .btn-hover-interactivo:hover {
+            transform: translateX(8px);
+        }
+
+        .flecha-hover {
+            transition: transform 0.2s ease;
+        }
+        .flecha-hover:hover {
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">LOGO</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                        <a class="nav-link" href="#opiniones">Opiniones</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text-center my-5">
+          <h1 class="titulo-glass-flotante">DESIGN TIME</h1>
+           <br>
+
+    <p class="lead subtitulo-destacado">Tendencias, inspiración y actualidad del mundo del diseño...</p>
+    <br>
+            <button class="btn btn-outline-dark px-4 py-2 mt-3 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeerMas" aria-expanded="false" aria-controls="collapseLeerMas">
+                LEER MÁS
+            </button>
+
+            <div class="collapse mt-5" id="collapseLeerMas">
+                <div id="carruselInformacion" class="carousel slide carousel-fade shadow-sm rounded overflow-hidden border carrusel-hover" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row g-0 align-items-center bg-light text-start">
+                                <div class="col-md-6 p-5" style="padding-left: 5rem !important; padding-right: 3rem !important;">
+                                    <h3 class="fw-bold text-dark mb-3">Interfaces Generativas y el Futuro del UI</h3>
+                                    <p class="text-secondary">La inteligencia artificial integrada en el diseño de interfaces ha dejado de ser una promesa para convertirse en el estándar. Descubre cómo las interfaces adaptables en tiempo real están redefiniendo la experiencia del usuario y la accesibilidad global.</p>
+                                    <a href="https://www.smashingmagazine.com/category/ui/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-danger mt-2 fw-bold btn-hover-interactivo text-white">Leer en Smashing Magazine &gt;</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="img/galeria/slider1.jpg" class="d-block w-100 bg-secondary" alt="Diseño UI Generativo" style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-0 align-items-center bg-light text-start">
+                                <div class="col-md-6 p-5" style="padding-left: 5rem !important; padding-right: 3rem !important;">
+                                    <h3 class="fw-bold text-dark mb-3">Tipografía Cinética: Marcas en Movimiento</h3>
+                                    <p class="text-secondary">El minimalismo estático ha evolucionado. Las principales agencias de branding están apostando por tipografías fluidas y cinéticas que reaccionan a la interacción del usuario, creando identidades visuales verdaderamente inmersivas y memorables.</p>
+                                    <a href="https://www.creativebloq.com/typography" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-danger mt-2 fw-bold btn-hover-interactivo text-white">Ver tendencias en Creative Bloq &gt;</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="img/galeria/slider2.jpg" class="d-block w-100 bg-secondary" alt="Tipografía Cinética" style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-0 align-items-center bg-light text-start">
+                                <div class="col-md-6 p-5" style="padding-left: 5rem !important; padding-right: 3rem !important;">
+                                    <h3 class="fw-bold text-dark mb-3">Sostenibilidad y Arte Digital 3D</h3>
+                                    <p class="text-secondary">El arte 3D y los entornos inmersivos están dominando las exposiciones digitales actuales. Exploramos las galerías virtuales más innovadoras donde creadores de todo el mundo fusionan la conciencia ecológica con el diseño espacial de vanguardia.</p>
+                                    <a href="https://www.behance.net/galleries/3d-art" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-danger mt-2 fw-bold btn-hover-interactivo text-white">Explorar galerías en Behance &gt;</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="img/galeria/slider3.jpg" class="d-block w-100 bg-secondary" alt="Arte Digital 3D" style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev flecha-hover" type="button" data-bs-target="#carruselInformacion" data-bs-slide="prev" style="filter: invert(1); width: 5%;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next flecha-hover" type="button" data-bs-target="#carruselInformacion" data-bs-slide="next" style="filter: invert(1); width: 5%;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row g-4">
+                
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white">
+                        <div id="carruselArticulo1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3500">
+                                    <img src="img/destacados/eva1.jpg" class="d-block w-100 bg-secondary" alt="Foto 1 Diseñadora" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3500">
+                                    <img src="img/destacados/eva2.jpg" class="d-block w-100 bg-secondary" alt="Foto 2 Diseñadora" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3500">
+                                    <img src="img/destacados/eva3.jpg" class="d-block w-100 bg-secondary" alt="Foto 3 Diseñadora" style="height: 200px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <span class="badge bg-danger mb-2">DISEÑADOR DEL MES</span>
+                                <h5 class="card-title fw-bold">Eva Cremers: 3D y Vanguardia</h5>
+                                <p class="card-text text-secondary">
+                                    Descubre cómo esta joven ilustradora rompió las reglas corporativas. Un viaje inspirador desde sus primeros bocetos hasta colaborar con marcas globales como Apple y Nike usando modelado 3D y muchísima personalidad.
+                                </p>
+                            </div>
+                            <div class="mt-auto pt-3">
+                                <a href="https://www.behance.net/evacremers" target="_blank" rel="noopener noreferrer" class="text-danger fw-bold text-decoration-none d-inline-block btn-hover-interactivo">VER MÁS &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white">
+                        <div id="carruselArticulo2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3500">
+                                    <img src="img/destacados/consejo1.jpg" class="d-block w-100 bg-secondary" alt="Foto 1 Consejo" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3500">
+                                    <img src="img/destacados/consejo2.jpg" class="d-block w-100 bg-secondary" alt="Foto 2 Consejo" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3500">
+                                    <img src="img/destacados/consejo3.jpg" class="d-block w-100 bg-secondary" alt="Foto 3 Consejo" style="height: 200px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <span class="badge bg-danger mb-2">TIPS PROFESIONALES</span>
+                                <h5 class="card-title fw-bold">De la Teoría a la Práctica</h5>
+                                <p class="card-text text-secondary">
+                                    Secretos técnicos que marcan la diferencia: aprende sobre la alineación óptica frente a la matemática, cómo estructurar la jerarquía visual perfecta y la forma correcta de argumentar tus diseños ante un cliente.
+                                </p>
+                            </div>
+                            <div class="mt-auto pt-3">
+                                <a href="https://www.smashingmagazine.com/category/design/" target="_blank" rel="noopener noreferrer" class="text-danger fw-bold text-decoration-none d-inline-block btn-hover-interactivo">VER MÁS &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white">
+                        <div id="carruselArticulo3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3500">
+                                    <img src="img/destacados/mente1.jpg" class="d-block w-100 bg-secondary" alt="Foto 1 Mente" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3500">
+                                    <img src="img/destacados/mente2.jpg" class="d-block w-100 bg-secondary" alt="Foto 2 Mente" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3500">
+                                    <img src="img/destacados/mente3.jpg" class="d-block w-100 bg-secondary" alt="Foto 3 Mente" style="height: 200px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <span class="badge bg-danger mb-2">BIENESTAR CREATIVO</span>
+                                <h5 class="card-title fw-bold">Meditación y Bloqueo Creativo</h5>
+                                <p class="card-text text-secondary">
+                                    Descubre cómo el mindfulness y la meditación guiada actúan como herramientas clave para desbloquear tu mente ante el lienzo en blanco. Aprende rutinas básicas de respiración consciente para disolver el estrés y limpiar el ruido mental.
+                                </p>
+                            </div>
+                            <div class="mt-auto pt-3">
+                                <a href="https://www.mindful.org/how-to-meditate/" target="_blank" rel="noopener noreferrer" class="text-danger fw-bold text-decoration-none d-inline-block btn-hover-interactivo">VER MÁS &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="container py-5">
+           <h2 class="titulo-glass-flotante text-center">GALERÍA DE INSPIRACIÓN</h2>
+            <div class="row g-4">
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white text-center" data-bs-toggle="modal" data-bs-target="#modalEditorial" style="cursor: pointer;">
+                        <img src="img/galeria/proyecto1.jpg" class="card-img-top bg-secondary" alt="Diseño Editorial" style="height: 220px; object-fit: cover;">
+                        <div class="card-body py-3">
+                            <span class="badge bg-dark mb-2">EDITORIAL</span>
+                            <h5 class="card-title fw-bold fs-6 mb-1">Anagrama Studio</h5>
+                            <p class="card-text text-muted small">Branding & Layout Premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white text-center" data-bs-toggle="modal" data-bs-target="#modalIlustracion" style="cursor: pointer;">
+                        <img src="img/galeria/proyecto2.jpg" class="card-img-top bg-secondary" alt="Ilustración Digital" style="height: 220px; object-fit: cover;">
+                        <div class="card-body py-3">
+                            <span class="badge bg-dark mb-2">ILUSTRACIÓN</span>
+                            <h5 class="card-title fw-bold fs-6 mb-1">Musketon</h5>
+                            <p class="card-text text-muted small">Vectores de Máximo Detalle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white text-center" data-bs-toggle="modal" data-bs-target="#modal3D" style="cursor: pointer;">
+                        <img src="img/galeria/proyecto3.jpg" class="card-img-top bg-secondary" alt="Modelado 3D" style="height: 220px; object-fit: cover;">
+                        <div class="card-body py-3">
+                            <span class="badge bg-dark mb-2">ARTE 3D</span>
+                            <h5 class="card-title fw-bold fs-6 mb-1">Billelis</h5>
+                            <p class="card-text text-muted small">Escultura Digital y Metales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 tarjeta-hover bg-white text-center" data-bs-toggle="modal" data-bs-target="#modalSerigrafia" style="cursor: pointer;">
+                        <img src="img/galeria/proyecto4.jpg" class="card-img-top bg-secondary" alt="Arte Impreso" style="height: 220px; object-fit: cover;">
+                        <div class="card-body py-3">
+                            <span class="badge bg-dark mb-2">CARTELERÍA & PRINT</span>
+                            <h5 class="card-title fw-bold fs-6 mb-1">Studio Muti</h5>
+                            <p class="card-text text-muted small">Arte Impreso y Vectores</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="opiniones" class="container py-5 bg-light my-4 rounded">
+            <h2 class="text-center fw-bold mb-4">OPINIONES Y ENTREVISTAS</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm border-start border-danger border-4">
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6 text-dark italic">"Gran artículo, muy inspirador. Me abrió los ojos a nuevas alternativas cromáticas."</p>
+                            <footer class="blockquote-footer mt-2">Nombre del Estudiante</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm border-start border-primary border-4">
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6 text-dark">"Entrevista a un diseñador destacado de la Escuela de Artes Visuales."</p>
+                            <a href="articulos.html" class="btn btn-sm btn-link text-primary p-0 fw-bold">LEER ENTREVISTA &gt;</a>
+                        </blockquote>
+                        
+                        <div class="mt-3 border text-center p-2 text-muted rounded bg-light" style="font-size: 12px;">
+                            <span>[Incrustación de Servicio Externo: Playlist o Podcast de Spotify / YouTube]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5 my-4">
+            <div class="p-5 bg-dark text-white rounded text-center">
+                <h3 class="fw-bold mb-3">SUSCRÍBETE A NUESTRO NEWSLETTER</h3>
+                <p class="text-light-50 mb-4">Recibe las últimas tendencias y convocatorias creativas directamente en tu bandeja de entrada.</p>
+                
+                <form action="#" method="POST" class="row justify-content-center g-3 text-start">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Tu Nombre completo" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Intereses (Ej. Gráfico, Web)">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-danger w-100 fw-bold">SUSCRIBIRSE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="modalEditorial" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold">Diseño Editorial | Anagrama Studio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carruselEditorial" class="carousel slide shadow-sm rounded overflow-hidden mb-4 border" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/galeria/editorial1.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Editorial Anagrama 1" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/editorial2.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Editorial Anagrama 2" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/editorial3.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Editorial Anagrama 3" style="height: 380px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselEditorial" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselEditorial" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">Branding y Maquetación de Libros Corporativos</h4>
+                    <p class="text-secondary">Anagrama es uno de los estudios de diseño y branding premium más influyentes del mundo. Son maestros en fusionar acabados metalizados, papeles con texturas únicas y tipografías perfectamente balanceadas en retículas suizas impecables.</p>
+                    <div class="d-flex justify-content-end gap-2 mt-4">
+                        <a href="https://www.behance.net/anagrama" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark fw-bold btn-hover-interactivo">Ver Perfil</a>
+                        <a href="https://www.behance.net/anagrama/projects" target="_blank" rel="noopener noreferrer" class="btn btn-danger text-white fw-bold btn-hover-interactivo">Ver Proyectos Completo &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIlustracion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold">Ilustración Digital | Musketon</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carruselIlustracion" class="carousel slide shadow-sm rounded overflow-hidden mb-4 border" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/galeria/ilustracion1.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Ilustración Vectorial 1" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/ilustracion2.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Ilustración Vectorial 2" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/ilustracion3.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Ilustración Vectorial 3" style="height: 380px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselIlustracion" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselIlustracion" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">Ilustración Vectorial Masiva y Cultura Pop</h4>
+                    <p class="text-secondary">Musketon (Bert Dries) es un artista vectorial belga legendario por llevar Adobe Illustrator al límite absoluto. Sus piezas de arte pop contienen millones de vectores con un nivel de detalle milimétrico y sombras hiper complejas hechas 100% de curvas.</p>
+                    <div class="d-flex justify-content-end gap-2 mt-4">
+                        <a href="https://www.behance.net/musketon" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark fw-bold btn-hover-interactivo">Ver Perfil</a>
+                        <a href="https://www.behance.net/musketon/projects" target="_blank" rel="noopener noreferrer" class="btn btn-danger text-white fw-bold btn-hover-interactivo">Ver Proyectos Completo &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3D" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold">Arte 3D y Escultura Digital | Billelis</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carrusel3D" class="carousel slide shadow-sm rounded overflow-hidden mb-4 border" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/galeria/3d_1.jpg" class="d-block w-100 bg-secondary" alt="Proyecto 3D Billelis 1" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/3d_2.jpg" class="d-block w-100 bg-secondary" alt="Proyecto 3D Billelis 2" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/3d_3.jpg" class="d-block w-100 bg-secondary" alt="Proyecto 3D Billelis 3" style="height: 380px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel3D" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrusel3D" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">Fusión de Barroco, Escultura Clásica y CGI</h4>
+                    <p class="text-secondary">Billelis (Billy Bogiatzoglou) es un ilustrador 3D y director de arte británico cuyo trabajo es inconfundible. Se especializa en crear intrincadas esculturas digitales, fusionando anatomía humana, patrones geométricos y un nivel de detalle absurdo usando materiales dorados, metálicos y oscuros. Ha creado piezas para marcas globales, música y portadas de libros.</p>
+                    <div class="d-flex justify-content-end gap-2 mt-4">
+                        <a href="https://www.behance.net/billelis" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark fw-bold btn-hover-interactivo">Ver Perfil</a>
+                        <a href="https://www.behance.net/billelis/projects" target="_blank" rel="noopener noreferrer" class="btn btn-danger text-white fw-bold btn-hover-interactivo">Ver Proyectos Completo &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSerigrafia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold">Cartelería y Arte Impreso | Studio Muti</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carruselSerigrafia" class="carousel slide shadow-sm rounded overflow-hidden mb-4 border" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/galeria/serigrafia1.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Print Muti 1" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/serigrafia2.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Print Muti 2" style="height: 380px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galeria/serigrafia3.jpg" class="d-block w-100 bg-secondary" alt="Proyecto Print Muti 3" style="height: 380px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselSerigrafia" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselSerigrafia" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">Ilustración Vibrante para Gig Posters y Empaques</h4>
+                    <p class="text-secondary">Studio Muti, con sede en Ciudad del Cabo, es una potencia creativa especializada en el diseño de arte impreso y cartelería. Combinan técnicas tradicionales con un acabado digital pulido, creando composiciones tipográficas ricas y carteles con tintas planas ideales para técnicas de separación de color y serigrafía analógica.</p>
+                    <div class="d-flex justify-content-end gap-2 mt-4">
+                        <a href="https://www.behance.net/muti" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark fw-bold btn-hover-interactivo">Ver Perfil</a>
+                        <a href="https://www.behance.net/muti/projects" target="_blank" rel="noopener noreferrer" class="btn btn-danger text-white fw-bold btn-hover-interactivo">Ver Proyectos Completo &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-dark py-5 border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold border-bottom pb-2">SOBRE NOSOTROS</h5>
+                    <p class="text-secondary small mt-2">Revista Digital de Diseño es un espacio de difusión académica y profesional creado para exponer el talento, proyectos disruptivos e investigación de la Escuela de Diseño Gráfico.</p>
+                    <p class="text-secondary small mb-0">Colaboraciones estudiantiles abiertas cada mes.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold border-bottom pb-2">ENLACES</h5>
+                    <ul class="list-unstyled mt-2 row">
+                        <div class="col-6">
+                            <li><a href="index.html" class="text-secondary text-decoration-none small">Inicio</a></li>
+                            <li><a href="articulos.html" class="text-secondary text-decoration-none small">Artículos</a></li>
+                            <li><a href="galeria.html" class="text-secondary text-decoration-none small">Galería</a></li>
+                        </div>
+                        <div class="col-6">
+                            <li><a href="contacto.html" class="text-secondary text-decoration-none small">Contacto</a></li>
+                            <li><a href="mailto:soporte@revista.unasa.edu.sv" class="text-secondary text-decoration-none small">Email</a></li>
+                            <li><a href="tel:+50324400000" class="text-secondary text-decoration-none small">Teléfono</a></li>
+                        </div>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 text-md-end">
+                    <h5 class="fw-bold border-bottom pb-2 text-md-end">SÍGUENOS</h5>
+                    <div class="mt-3">
+                        <a href="https://facebook.com" target="_blank" class="btn btn-outline-secondary btn-sm rounded-circle me-2" style="width: 35px; height: 35px;"><i class="fab fa-facebook-f"></i>F</a>
+                        <a href="https://twitter.com" target="_blank" class="btn btn-outline-secondary btn-sm rounded-circle me-2" style="width: 35px; height: 35px;"><i class="fab fa-twitter"></i>T</a>
+                        <a href="https://instagram.com" target="_blank" class="btn btn-outline-secondary btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="fab fa-instagram"></i>I</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top text-secondary small">
+                <p class="mb-0">&copy; 2026 Universidad Autónoma de Santa Ana | Facultad de Ciencias Sociales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
